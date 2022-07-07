@@ -4,8 +4,19 @@ ul {
 }
 .nav-items > li {
     padding: 10px;
+    color: #888888;
     /* display: flex; */
 }
 nav {
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 5px 8px #888888;
   }
+.main {
+    background-color: black;
+    color: #888888;
+}
+.dot {
+    list-style-type: square;
+}
+.dot > li {
+    margin: 2% 0;
+}

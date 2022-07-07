@@ -15,10 +15,15 @@
 
 function NavBar() {
     return (
-        <nav className="navbar bg-light px-5">
+        <nav className="navbar navbar-dark bg-dark px-5">
             <div className="container-fluid">
                 {/* <a class="navbar-brand">Scope Tee</a> */}
-                <img src="react-logo.png" width={"60px"} alt="..." />
+                <a class="navbar-brand d-flex" href="#">
+                <img src="react-logo.png" alt="" width={"60px"}  class="d-inline-block align-text-top" />
+                 <p>ReactFacts</p>
+                </a>
+                {/* <img src="react-logo.png" width={"60px"} alt="..." />
+                <h2>ReactFacts</h2> */}
                 <div className="d-flex"> 
                     <ul className="d-flex nav-items">
                         <li> Pricing</li>
@@ -38,9 +43,9 @@ function NavBar() {
 
 function Header () {
     return(
-        <div  className="text-start px-5 py-5">
+        <div  className="text-start px-5 py-5 main">
             <h1> Fun Facts About React</h1>
-            <ul>
+            <ul className="dot">
                 <li> Was first released in 2013</li>
                 <li> Is maintained by Facebook</li>
                 <li> Powers thousands of enterprise apps, including mobile apps</li>
@@ -52,7 +57,7 @@ function Header () {
 
  function Footer () {
     return (
-        <div className="text-center">
+        <div className="text-center main">
             <p> © 2022 Fuad development. All rights reserved.</p>
         </div>
     )
