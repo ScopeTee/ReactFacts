@@ -17,31 +17,18 @@ function NavBar() {
     return (
         <nav className="navbar navbar-dark bg-dark px-5">
             <div className="container-fluid">
-                {/* <a class="navbar-brand">Scope Tee</a> */}
                 <a class="navbar-brand d-flex" href="#">
-                <img src="react-logo.png" alt="" width={"60px"}  class="d-inline-block align-text-top" />
-                 <p>ReactFacts</p>
+                    <img src="react-logo.png" alt="" width={"40px"}  class="d-inline-block align-text-top" />
+                    <h3>ReactFacts</h3>
                 </a>
-                {/* <img src="react-logo.png" width={"60px"} alt="..." />
-                <h2>ReactFacts</h2> */}
-                <div className="d-flex"> 
-                    <ul className="d-flex nav-items">
-                        <li> Pricing</li>
-                        <li> About</li>
-                        <li> Contact </li>
-                    </ul>
-                    {/* <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> */}
-                </div>
+                <p className="nav-items"> React Course - FUAD</p>
                 
             </div>
         </nav>
     )
 }
 
-function Header () {
+function Main () {
     return(
         <div  className="text-start px-5 py-5 main">
             <h1> Fun Facts About React</h1>
@@ -66,7 +53,7 @@ function Page () {
     return (
         <div> 
         <NavBar />
-        <Header />
+        <Main />
         <Footer />
         {/* <MainContent /> */}
     </div>
